@@ -1,5 +1,6 @@
 package com.example.internasyanidadascalculadora
 
+import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
@@ -76,6 +77,11 @@ class MainActivity : AppCompatActivity() {
         //clase interna
         val miClaseInterna = miClaseAnidadasyInternas().miClaseInterna()
         println("El resulatado de la suma es ${miClaseInterna.sumaDos(3)}")
+    }
+    fun btnSiguiente(Vista:View){
+        val ventanaSiguiente: Intent = Intent(applicationContext,ListViewApp::class.java)
+        startActivity(ventanaSiguiente)
+
     }
 
 }
